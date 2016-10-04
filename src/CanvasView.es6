@@ -5,9 +5,13 @@ class CanvasView{
         this.c.width = window.innerWidth = 800;
         this.c.height = window.innerHeight = 380;
     }
-    drawPlayer(pos1){
+
+    clear() {
         this.ctx.clearRect(0, 0, this.c.width, this.c.height);
-        this.ctx.fillRect(pos1.x,pos1.y,10,10);
+    }
+
+    drawPlayer(pos1){
+        this.ctx.fillRect(pos1.x,pos1.y,pos1.width,pos1.height);
     }
 
     drawEnemy(pos2) {

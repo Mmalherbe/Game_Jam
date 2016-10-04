@@ -10,9 +10,9 @@ class Controller {
         this.enemy = new Enemy();
         this.key = new KeyView();
         this.canvas = new CanvasView();
-
     }
     loop() {
+        this.canvas.clear();
         // De KeyView moet doorgeven dat er een knopje is gedrukt
         // Zet de functie module aan
         this.player.move(this.key.location);

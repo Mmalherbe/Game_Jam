@@ -1,8 +1,12 @@
 class Player {
     constructor() {
         this.player = {
-            xPos: 0,
-            yPos: 0
+            xPos: 300,
+            yPos: 300,
+            height: 10,
+            width: 10,
+            hp: 10,
+            color: "rgba(0,0,0,1)"
         };
     }
     move(movement) {
@@ -33,7 +37,7 @@ class Player {
     }
 
     get pos1() {
-        return {x: this.player.xPos, y: this.player.yPos};
+        return {x: this.player.xPos, y: this.player.yPos, width, height};
     }
 }
 
