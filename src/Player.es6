@@ -1,5 +1,9 @@
-class Module {
+class Player {
     constructor() {
+        this.player = {
+            xPos: 0,
+            yPos: 0
+        };
     }
     move(movement) {
         if(movement.left) {
@@ -14,6 +18,7 @@ class Module {
         if (movement.down) {
             this.player.yPos += 10;
         }
+
     }
 
     get pos() {
@@ -21,4 +26,4 @@ class Module {
     }
 }
 
-module.exports = Module;
+module.exports = Player;
