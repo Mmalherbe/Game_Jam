@@ -1,7 +1,7 @@
 class KeyView {
     constructor() {
         this.left = false;
-        this.right = false;
+        this.rightt = false;
         this.up = false;
         this.down = false;
 
