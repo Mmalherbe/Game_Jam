@@ -36,7 +36,7 @@ class KeyView {
         });
     }
 
-    get key (){
+    get location (){
         return {
             left: this.left,
             right: this.right,

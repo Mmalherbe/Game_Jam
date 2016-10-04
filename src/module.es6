@@ -3,7 +3,7 @@ class Module {
         this.xPos = 0;
         this.yPos = 0;
     }
-    mov(movement) {
+    move(movement) {
         if(movement.left) {
             this.xPos -= 10;
         }

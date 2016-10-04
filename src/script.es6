@@ -10,14 +10,12 @@ class Controller {
         this.canvas = new CanvasView();
     }
     loop() {
-        // de view moet doorgeven dat er is gedrukt is
-        // zet de fuctie module aan
-        this.mod.mov(this.key.key);
+        // De KeyView moet doorgeven dat er een knopje is gedrukt
+        // Zet de functie module aan
+        this.mod.move(this.key.location);
         this.canvas.draw(this.mod.pos);
-        // krijg de coordinaten van de module
-        // stuur de coordinaten door naar de view
-
-        // regelt de timing
+        // Krijg de coördinaten doorgestuurd van de module
+        // Stuur de coördinaten weer door naar de view
         window.requestAnimationFrame(() => {
             this.loop();
         });
