@@ -1,7 +1,7 @@
 # es6boiler
 +me
 +and me
-+love youu
++love you
 ## Getting Started
 
 ### Dependencies
