@@ -1,6 +1,6 @@
 # es6boiler
 +me
-+you
++and me
 ## Getting Started
 
 ### Dependencies
@@ -26,14 +26,14 @@ es6boiler/
 |   |—— bundle.js     # babelified and minified scripts
 |   |—— bundle.js.map # sourcemap for the scrips
 |—— sass/
-|   |—— style.scss    # you're entriepoint stylesheet
+|   |—— style.scss    # your entrypoint stylesheet
 |—— src/
-|   |—— script.es6    # you're entriepoint script
-|   |—— module.es6    # you're first es6 module script
+|   |—— script.es6    # your entrypoint script
+|   |—— module.es6    # your first es6 module script
 |—— .eslintrc
 |—— .gitignore
 |—— gulfile.js
-|—— index.html        # you're main html
+|—— index.html        # your main html
 |—— package.json
 |—— README.md
 ```
