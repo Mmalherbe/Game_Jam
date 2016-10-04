@@ -1,6 +1,6 @@
 # es6boiler
 +me
-and me
++and me
 ## Getting Started
 
 ### Dependencies
