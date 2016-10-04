@@ -55,7 +55,7 @@ window.onload = function() {
 
         // Age the particle
         this.life++;
-
+        console.log('hi');
         // If Particle is old, it goes in the chamber for renewal
         if (this.life >= this.maxLife) {
             delete particles[this.id];
@@ -64,7 +64,7 @@ window.onload = function() {
         // Create the shapes
         context.clearRect(settings.leftWall, settings.groundLevel, canvas.width, canvas.height);
         context.beginPath();
-        context.fillStyle="#ffffff";
+        context.fillStyle="#000000";
         // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
         context.arc(this.x, this.y, settings.particleSize, 0, Math.PI*2, true);
         context.closePath();
@@ -91,3 +91,6 @@ window.onload = function() {
         }
     }, 30);
 };
+
+module.exports = Particles;
+

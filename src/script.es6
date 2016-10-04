@@ -2,12 +2,14 @@
 const Module = require("./module.es6");
 const KeyView = require("./KeyView.es6");
 const CanvasView = require("./CanvasView.es6");
+const Particles = require("./Particles.es6");
 
 class Controller {
     constructor() {
         this.mod = new Module();
         this.key = new KeyView();
         this.canvas = new CanvasView();
+        this.part = new Particles();
     }
     loop() {
         // De KeyView moet doorgeven dat er een knopje is gedrukt
