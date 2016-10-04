@@ -1,5 +1,6 @@
 # es6boiler
 +me
+and me
 ## Getting Started
 
 ### Dependencies
