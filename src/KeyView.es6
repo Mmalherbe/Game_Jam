@@ -1,7 +1,7 @@
 class KeyView {
     constructor() {
         this.left = false;
-        this.rightt = false;
+        this.right = false;
         this.up = false;
         this.down = false;
 
@@ -18,7 +18,7 @@ class KeyView {
             if (keyBoardDown.keyCode == 40) {
                 this.down = true;
             }
-        })
+        });
 
         document.addEventListener("keyup", (keyBoardUp) => {
             if(keyBoardUp.keyCode == 39) {
@@ -33,7 +33,7 @@ class KeyView {
             if(keyBoardUp.keyCode == 40) {
                 this.down = false;
             }
-        })
+        });
     }
 
     get key (){
