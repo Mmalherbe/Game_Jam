@@ -5,8 +5,8 @@ class Player {
             yPos: 300,
             height: 10,
             width: 10,
-            hp: 10,
-            color: "rgba(0,0,0,1)"
+            hp: 3,
+            color: "rgba(0,204,102,1)"
         };
     }
     move(movement) {
@@ -33,11 +33,34 @@ class Player {
         } else if(movement.up) {
             this.player.yPos -= 10;
         }
+        this.collision();
+    }
 
+    collision(particle){
+        if (!particle) return;
+
+        if ((particle.x + particle.width >= this.player.xPos)
+            && (particle.x <= this.player.xPos + this.player.width)
+            && (particle.y + particle.height >= this.player.yPos)
+            && (particle.y <= this.player.yPos + this.player.height)
+        ) {
+            console.log("hi");
+            this.player.hp = this.player.hp - 1;
+            this.player.color = "rgba(200,0,0,1)";
+            setTimeout(()=>{ this.player.color = "rgba(0,254,0,1)";}, 100);
+            return true;
+        }
+        return false;
     }
 
     get pos1() {
-        return {x: this.player.xPos, y: this.player.yPos, width, height};
+        return {
+            x: this.player.xPos,
+            y: this.player.yPos,
+            width: this.player.width,
+            height: this.player.height,
+            color: this.player.color
+        };
     }
 }
 
